@@ -128,6 +128,7 @@ export default {
     // modal
     modal_font_size_heading: 18,
     modal_font_size_content: 14,
+    modal_font_size_small: 12,
     modal_button_font_size: 16, // 按钮字号
     modal_button_height: 46, // 按钮高度
     toast_background_color: 'rgba(0,0,0,.7)',
@@ -175,7 +176,7 @@ export default {
     tabs_height:42,
     tabs_elevation:0,
     tabs_label_paddingTop:16,
-    tabs_initialLayout_height:0,
+    tabs_initialLayout_height:40,
     tabs_indicator_Color:'#FFF',
     labelBackgroundColor:'#FFF',
     // segmented_control
@@ -252,7 +253,17 @@ export default {
 
     // actionSheet
     sheet_title_backgroundcolor:'#F3F5F8',
+    sheet_backgroundColor:'#fff',
+    sheet_title_color:'#1F2530',
+    sheet_item_title_color:'#1F2530',
+    sheet_spre_color:'#DEDFE0',
+    sheet_item_backgroundColor:'#F3F5F8',
 
     // activityIndicator
     activity_indicator_size:89,
+
+    // steps
+    steps_paddingHorizontal:20,
+    steps_text_normal_color: '#1F2530',
+    steps_text_black_color: '#000000',
 }

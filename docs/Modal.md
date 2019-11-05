@@ -11,7 +11,7 @@ sidebar_label: Modal
 ```SnackPlayer name=modal-simple
 import React from 'react'
 import { View } from 'react-native'
-import { Button, Modal } from 'mCloud-mobile'
+import { Button, Modal } from 'mcloud-mobile'
 
 export default class ModalDemo extends React.Component {
     render() {
@@ -159,3 +159,18 @@ static showLoading(title?)
 ```
 static hideLoading()
 ```
+
+### notice
+
+```
+static notice(title, content?, icon?, onPress?, onDismiss?, action?)
+```
+
+参数 | 说明 | 类型 | 默认值
+----|-----|------|------
+| title    | 标题  |   string   |   ''  |
+| content    | 内容 | string | ''|
+| icon  | 图标 | any | null |
+| onPress   | 点击事件  | func | null |
+| onDismiss | 删除设置  | func | null |
+| action | 点击位置的文字  | string | '查看' |

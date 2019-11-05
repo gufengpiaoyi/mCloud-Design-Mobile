@@ -8,10 +8,10 @@ EmptyView
 
 ## Basic Example:
 
-```
+```SnackPlayer name=empty-simple
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
-import { EmptyView } from 'mCloud-Design-Mobile';
+import { EmptyView } from 'mcloud-mobile';
 
 const network_failedSource = require('../assets/empty_network_failed.png')
 

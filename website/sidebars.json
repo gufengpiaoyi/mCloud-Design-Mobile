@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Croe": ["Contributing"],
+    "Croe": ["index","Contributing"],
     "First Category": ["doc2"],
     "Second Category": ["doc3"]
   },
@@ -22,9 +22,13 @@
       "Picker",
       "Label",
       "EmptyView",
+      "Stepper",
       "Tabs",
       "DatePicker",
       "Modal",
+      "Avatar",
+      "ActionSheet",
+      "ShareSheet"
     ],
     "First Category": ["doc4", "doc5"]
   }
