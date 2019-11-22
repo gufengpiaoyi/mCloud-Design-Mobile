@@ -4,12 +4,12 @@ import {
     StyleSheet,
     ScrollView,
     Image,
+    SafeAreaView,
 } from 'react-native'
 import { List, Switch, Checkbox } from '../..'
 
 const { Item } = List
 const { Brief } = Item
-const uri = 'https://github.com/troila-mobile/mCloud-Design-Mobile/blob/master/example/logo.png'
 
 const data = [
     {
@@ -41,7 +41,7 @@ export default () => {
                     renderHeader="Normal Header"
                     renderFooter="Normal Footer"
                 >
-                    <Item>
+                    <Item hideLine required>
                         标题
                     </Item>
                 </List>
@@ -55,7 +55,7 @@ export default () => {
                     <Item arrow="down">
                         标题
                     </Item>
-                    <Item extra="详细信息" arrow="horizontal">
+                    <Item extra="详细信息" arrow="horizontal" hideLine>
                         标题
                     </Item>
                 </List>
@@ -70,6 +70,7 @@ export default () => {
                             />
                         )}
                         onPress={() => SwitchRef && SwitchRef.onToggle()}
+                        hideLine
                     >
                         标题
                     </Item>
@@ -85,6 +86,7 @@ export default () => {
                                 color: 'red',
                             },
                         }}
+                        hideLine
                     >
                         标题
                     </Item>
@@ -100,11 +102,10 @@ export default () => {
                         thumb={(
                             <Image
                                 style={styles.logo}
-                                source={{
-                                    uri,
-                                }}
+                                source={require('../../avatar/assets/default.png')}
                             />
                         )}
+                        hideLine
                     >
                         标题
                         <Brief>副标题  副标题  副标题  副标题  副标题  副标题</Brief>
@@ -158,6 +159,7 @@ export default () => {
                     }
                 </List>
             </ScrollView>
+            <SafeAreaView />
         </View>
     )
 }
@@ -176,6 +178,5 @@ const styles = StyleSheet.create({
     logo: {
         width: 40,
         height: 40,
-        marginRight: 10,
     },
 })
